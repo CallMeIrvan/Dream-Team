@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyxa Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-dark">
+    <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Irvan</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="irvan.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Akomodasi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="alexa.html">Content</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="index.html">Gallery</a></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item bg-secondary" href="flyxa.html">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+     </div>
+     <div class="container">
+     <div class="row text-light ">
+        <div class="col-3">
+            <div class="mb-3">
+               <label for="tanggal_awal" class="form-label">Tanggal Awal</label>
+               <input type="date" class="form-control" id="tanggal_awal">
+            </div>
+        </div>
+        <div class="col-3">
+           <div class="mb-3">
+              <label for="tanggal_awal" class="form-label">Tanggal Akhir</label>
+              <input type="date" class="form-control" id="tanggal_akhir">
+           </div>
+       </div>
+       <div class="col-3">
+           <div class="mb-3">
+              <label for="jenis" class="form-label">My Riders</label>
+              <select name="jenis" id="jenis" class="form-control">
+                  <option value="1">Kenshin</option>
+                  <option value="2">Akaza</option>
+                  <option value="3">Kazuturo</option>
+              </select>
+           </div>
+           </div>
+    <div class="col-1">
+        <a class="btn btn-success" id="cari" style="margin-top: 32px;">Cari</a>
+    </div>
+    <div class="row" id="rowHotel" style="display: none;">
+      <div class="col-12">
+        <div class="card-group">
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kenshin</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kenshin</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kenshin</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kenshin</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="rowSepeda" style="display: none;">
+      <div class="col-12">
+        <div class="card-group">
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Akaza</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Akaza</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Akaza</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Akaza</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="rowMotor" style="display: none;">
+      <div class="col-12">
+        <div class="card-group">
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kazuturo</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kazuturo</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kazuturo</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card ms-2 bg-secondary">
+            <img src="img/gm8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kazuturo</h5>
+              <a href="akomodasi.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+     <script>
+       
+       $("#cari").click(function(){
+        var jenis=$("#jenis").val();
+        if(jenis=='1'){
+            $("#rowHotel").fadeIn();
+            $("#rowSepeda").fadeOut();
+            $("#rowMotor").fadeOut();
+        }else if (jenis==2){
+            $("#rowSepeda").fadeIn();
+            $("#rowHotel").fadeOut();
+            $("#rowMotor").fadeOut();
+        }else{
+            $("#rowMotor").fadeIn();
+            $("#rowHotel").fadeOut();
+            $("#rowSepeda").fadeOut();
+        }
+        
+       });
+     </script>
+</body>
+</html>

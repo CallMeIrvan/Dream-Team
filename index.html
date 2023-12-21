@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark">
+   <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Irvan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="irvan.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="akomodasi.html">Akomodasi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="alexa.html">Content</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lainnya</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="flyxa.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row mt-3 mb-3 bg-dark bg-gradient">
+      <div class="col-12 d-flex justify-content-center">
+        <h2 class="text-light">Dream Team</h2>
+      </div>
+    </div>
+
+  <section class="gallery min-vh-100">
+     <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+           <div class="col">
+              <img src="img/gm5.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="img/gm6.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="img/gm7.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="img/gm8.jpg" class="gallery-item" alt="gallery">
+           </div>
+        </div>
+     </div>
+  </section>
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="img/1.jpg" class="modal-img" alt="modal img">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
